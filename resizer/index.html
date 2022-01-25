@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resizer</title>
+  <style>
+
+    html {
+      font-size: 32px;
+    }
+    .fields {
+      position: relative;
+      display: flex;
+      min-height: 225px;
+      max-height: calc(100vh - 200px);
+    }
+    .fields__separator {
+      background-color: rgba(44, 33, 146, 0.39);
+      cursor: w-resize;
+      width: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fields__left-field,
+    .fields__right-field {
+      background-color: tomato;
+      width: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fields__left-field {
+      background-color: sandybrown;
+    }
+  </style>
+</head>
+<body>
+  <div class="fields js-fields">
+    <div class="fields__left-field js-left-field">49%</div>
+
+    <div class="fields__separator js-separator">2%</div>
+
+    <div class="fields__right-field js-right-field">49%</div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
